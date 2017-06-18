@@ -1,10 +1,13 @@
 [package]
-name = "api"
+name = "iron-example"
 version = "0.1.0"
-authors = ["lima9 <max9@openmailbox.org>"]
+authors = ["Max"]
 
-[dependencies.iron]
-version = "*"
-
-[dependencies.time]
-version = "*"
+[dependencies]
+iron = "0.4"
+router = "0.4"
+logger = "0.2"
+env_logger = "0.3"
+rustc-serialize = "0.3"
+chrono = { version = "0.2", features = ["rustc-serialize"] }
+uuid = { version = "0.2", features = ["v4", "rustc-serialize"] }
